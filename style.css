@@ -1,0 +1,261 @@
+/*
+* Reset rules
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1.5;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/** Rules for flex container */
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+.row {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Right column */
+.column.side {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+}
+
+/* Main column */
+.column.main {
+    -webkit-flex: 9;
+    -ms-flex: 9;
+    flex: 9;
+    background-color: #fff;
+}
+
+/* Responsive layout - makes the right column hidde and main column to 100% width*/
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .column.side {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .column.side {
+        display: block !important;
+    }
+}
+
+/*Body*/
+body {
+    background-color: #ffe033;
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
+* {
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.5rem;
+}
+
+/*Side bar*/
+.side {
+    /*Linear gradient to divide left white right yellow*/
+    --bg-layer-1: no-repeat bottom 10% left 0 url(./images/art-hero-flowers.png);
+    --bg-layer-2: linear-gradient(to left, #ffe01b 85%, transparent 85%);
+    background: var(--bg-layer-1), var(--bg-layer-2);
+    background-color: #fff;
+}
+
+/*Main bar*/
+.main {
+    margin-left: 1rem;
+}
+
+.main img {
+    width: 2.5rem;
+}
+
+.main,
+.side {
+    padding: 1rem;
+    min-height: 800px;
+    /*Just for testing REMOVE*/
+}
+
+/* Form Container */
+
+.form-container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+/*Media query for small screen to full width form container */
+@media screen and (max-width: 600px) {
+    .form-container {
+        width: 100%;
+    }
+}
+
+.form-container h1 {
+    font-size: 2.5rem;
+    line-height: 3.2rem;
+    font-family: "Kiwi Maru", serif;
+}
+
+.form-container h1,
+.form-container p {
+    padding: 1rem 0;
+}
+
+/*Form*/
+
+.form-container form {
+    padding: 2rem 0 1rem 0;
+}
+
+.form-container input {
+    border: solid 1px #bcbab8;
+    min-width: 90%;
+    min-height: 2.8rem;
+    margin-bottom: 1.2rem;
+    margin-top: 0.4rem;
+}
+
+.form-container label {
+    font-weight: 600;
+}
+
+/*Requirements listing */
+
+.requirements .column {
+    flex: 1;
+}
+
+ul.list li::before {
+    list-style-position: inside !important;
+    content: "\2022";
+    color: #247c89;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+}
+
+/* sign up button */
+
+.sign-up {
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+.sign-up .column-btn {
+    flex: 2;
+}
+
+.column-btn button {
+    padding: 0.5rem 2rem;
+    background-color: #fff;
+    border: solid 1px #bcbab8;
+    color: #bcbab8;
+    font-weight: 600;
+}
+
+.sign-up .column-chk {
+    display: flex;
+    flex: 5;
+}
+
+.column-chk input {
+    font-size: 1rem;
+    min-width: 1rem;
+    min-height: auto;
+}
+
+.column-chk label {
+    font-weight: 500;
+}
+
+/*Terms of use*/
+.terms {
+    font-size: 0.9rem;
+}
+
+/*copyright*/
+
+.copyright {
+    margin-top: 1rem;
+}
+
+.copyright,
+.copyright a {
+    font-size: 0.8rem;
+    color: #247c89;
+}
+
+.copyright a:hover {
+    color: #12353a;
+}
+
+/*Feedback*/
+.feedback {
+    position: fixed;
+    right: -1.5rem;
+    top: 50%;
+    transform: rotate(-90deg);
+    background-color: #EFEEEA;
+    color: black;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+}
+
+.feedback a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
