@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailchimp form clone</title>
+
+    <!--Import CSS files-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body class="row">
+    <!--Main column-->
+    <div class="column main">
+        <img src="./images/mc-freddie-dark.svg">
+        <div class="form-container">
+            <h1>Welcome to Mailchimp</h1>
+            <p>Find your people. Engage your customers. Build your brand.
+                Do it all with Mailchimp’s Marketing Platform.
+                Already have an account? <a href="#">Log in</a>
+            </p>
+            <!--Form section-->
+            <form>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="uname">Username:</label><br>
+                <input type="text" id="uname" name="uname"><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password">
+                <div class="requirements">
+                    <div class="row">
+                        <div class="column">
+                            <ul class="list">
+                                <li>One lowercase character</li>
+                                <li>One uppercase character</li>
+                                <li>One number</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <ul class="list">
+                                <li>One special character</li>
+                                <li>8 characters minimum</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sign-up">
+                    <div class="row">
+                        <div class="column-btn">
+                            <button type="submit" disabled>Sign Up</button>
+                        </div>
+                        <div class="column-chk">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1"> I don't want to receive emails about new Mailchimp products, best
+                                practices, or special offers. </label><br>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <p class="terms">By clicking the "Sign Up" button, you are creating a Mailchimp account, and you agree to
+                Mailchimp's
+                <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+            </p>
+        </div>
+        <div class="copyright">
+            <p>©2001–2021 All Rights Reserved. Mailchimp® is a registered trademark of The Rocket Science Group.</p>
+            <a href="#">Cookie Preferences</a>, <a href="#">Privacy</a>, and <a href="#">Terms</a>.
+        </div>
+    </div>
+    <!--Flower column container-->
+    <div class="column side">
+    </div>
+    <div class="feedback">
+        <p><a href="#">Feedback</a></p>
+    </div>
+</body>
+
+</html>
